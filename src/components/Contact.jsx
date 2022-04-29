@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
-
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from "react";
-import './reachOut.scss'
 import { TextInput } from './TextInput';
 import { ButtonMain } from './styles/ButtonMain'
 
@@ -27,8 +25,23 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #F9F9F9;
+  padding-bottom: 20px;
   @media only screen and (max-width: 480px) {
     flex-direction: column;
+
+  }
+`;
+const FormContainer = styled.form`
+  // height: 100vh;
+  display: flex;
+  width: 80%;
+
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9F9;
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+
   }
 `;
 
@@ -84,6 +97,7 @@ const [email, setEmail] = useState('')
         Request a Demo <br /> Get in Touch
         </Title>
  
+        <FormContainer>
         <form ref={form} onSubmit={handleSubmit}>
           <TextInput label="Name" name="user_name" value={name} setValue={setName}/>
           <TextInput label="Subject"name="subject" value={subject} setValue={setSubject} />
@@ -91,9 +105,8 @@ const [email, setEmail] = useState('')
           <textarea rows="5" placeholder="type your message here" name="message" />
           {done ? 'sent. thank you!' : <ButtonMain data-progress-text='uploading'>Submit</ButtonMain>}
         </form>
-        {/* <a href='#'>
-          <FaLinkedinIn />
-        </a> */}
+        </FormContainer>
+
       </Container>
     </>
 

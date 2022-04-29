@@ -1,7 +1,8 @@
 
 form {
-  // padding-top: 80px;
+
   max-width: 500px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -18,7 +19,7 @@ form {
 .input-container:focus-within label {
   transform: translate(0, 12px) scale(0.8);
   color: #0a53e4;
-//   text-transform: lowercase;
+
 
 }
 
