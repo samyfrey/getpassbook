@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Search from "../img/search.png";
 
 const Container = styled.div`
-  width: 100px;
+  width: 300px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
-  width: 20px;
+  width: 100%;
 `;
 
 const Text = styled.span`
@@ -27,11 +27,11 @@ const Text = styled.span`
   }
 `;
 
-const MiniCard = () => {
+const MiniCard = ({ source, text }) => {
   return (
     <Container>
-      <Image src={Search} />
-      <Text>Lorem ipsum dolor sit amet consectetur.</Text>
+      <Image src={source} />
+      <Text>{text}</Text>
     </Container>
   );
 };

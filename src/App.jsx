@@ -2,12 +2,12 @@ import './style.css';
 
 import styled, { css } from "styled-components";
 import Contact from "./components/Contact";
-import Feature from "./components/Feature";
+import Product from "./components/Product";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
 import Price from "./components/Price";
-import Service from "./components/Service";
+import Features from "./components/Features";
 
 const Container = styled.div`
   height: 100vh;
@@ -60,14 +60,11 @@ const App = () => {
         <IntoShape />
       </Container>
       <Container>
-        <div id="services">
-        <Feature/>
-
-        </div>
+        <Product/>
         <FeatureShape />
       </Container>
       <Container>
-        <Service />
+        <Features />
         {!smallScreen && <ServiceShape />}
       </Container>
       <Container>

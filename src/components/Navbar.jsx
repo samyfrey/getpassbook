@@ -64,6 +64,7 @@ const Navbar = () => {
 
           <Menu>
             <MenuItem><Link to="home" spy={true} smooth={true}>Home</Link></MenuItem>
+            <MenuItem><Link to="product" spy={true} smooth={true}>Product</Link></MenuItem>
             <MenuItem><Link to="feature" spy={true} smooth={true}>Features</Link></MenuItem>
             <MenuItem><Link to="price" spy={true} smooth={true}>Pricing</Link></MenuItem>
             <MenuItem><Link to="contact" spy={true} smooth={true}>Contact</Link></MenuItem>
