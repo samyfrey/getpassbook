@@ -8,9 +8,19 @@ import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
 import Price from "./components/Price";
 import Features from "./components/Features";
+import ScrollButton from './components/ScrollButton';
 
 const Container = styled.div`
   height: 100vh;
+  min-height: 550px;
+  overflow: hidden;
+  position: relative;
+  max-width: 1500px;
+  margin: auto;
+`;
+const BottomContainer = styled.div`
+  height: 100vh;
+  background-color: #F9F9F9;
   min-height: 550px;
   overflow: hidden;
   position: relative;
@@ -42,7 +52,7 @@ const FeatureShape = styled.div`
 const ServiceShape = styled.div`
   ${Shape}
   clip-path: polygon(0 0, 33% 0%, 33% 100%, 0 100%);
-  background-color: #0a6ec7;;
+  background-color: #edf6f9;;
 `;
 
 const PriceShape = styled.div`
@@ -55,6 +65,7 @@ const App = () => {
   const smallScreen = window.screen.width <= 480 ? true : false;
   return (
     <>
+   
       <Container>
         <Navbar />
         <Intro />
@@ -64,6 +75,7 @@ const App = () => {
         <Product/>
         <FeatureShape />
       </Container>
+      
       <Container>
         <Features />
         {!smallScreen && <ServiceShape />}
@@ -72,10 +84,12 @@ const App = () => {
         <Price />
         <PriceShape />
       </Container>
-      <Container>
+      <BottomContainer>
+        <ScrollButton />
         <Contact />
         <Footer />
-      </Container>
+      </BottomContainer>
+
     </>
   );
 };

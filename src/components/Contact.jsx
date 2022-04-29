@@ -5,26 +5,13 @@ import { useRef, useState } from "react";
 import { TextInput } from './TextInput';
 import { ButtonMain } from './styles/ButtonMain'
 
-const Button = styled.button`
-  padding: 15px;
-  background-color: #4282FA;
-  color: white;
-  border-radius: 10px;
-  font-weight: bold;
-  border: none;
-  letter-spacing: 2px;
-  cursor: pointer;
-  @media only screen and (max-width: 480px) {
-    margin-bottom: 20px;
-  }
-`;
 
 const Container = styled.div`
-  // height: 100vh;
+  // height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F9F9F9;
+  // background-color: #F9F9F9;
   padding-bottom: 20px;
   @media only screen and (max-width: 480px) {
     flex-direction: column;
@@ -32,7 +19,7 @@ const Container = styled.div`
   }
 `;
 const FormContainer = styled.form`
-  // height: 100vh;
+
   display: flex;
   width: 80%;
 

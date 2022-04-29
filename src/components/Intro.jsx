@@ -108,18 +108,17 @@ const Intro = () => {
           Manage your client portfolio by getting a consolidated view of your revenue targets, outstanding loans and tracking your budget performance. All of this while staying up-to-date with news relevant to you. 
         </Desc>
         <Info>
-          <ButtonMain >Start a Project</ButtonMain>
-          {/* <Contact>
-            <Phone>info@passbook.com</Phone>
+          <ButtonMain ><a href="https://samyfrey.github.io/passbook/" target='_blank'
+								rel='noopener noreferrer'>Start Now</a></ButtonMain>
+          <Contact>
+            <Phone><a style={{color:'#0a6ec7'}} href="https://www.linkedin.com/in/samyfrey/" target='_blank'
+								rel='noopener noreferrer'>in/samyfrey</a></Phone>
             <ContactText>For any question or concern</ContactText>
-          </Contact> */}
+          </Contact>
         </Info>
-        {/* <ChartContainer>
-        <LineChart/>
-        </ChartContainer> */}
+
       </Left>
       <Right><LineChart/></Right>
-      {/* <AnimatedShapes/> */}
     </Container>
   );
 };

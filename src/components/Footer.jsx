@@ -2,14 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  height: 30%;
-  background-color: #1111;
+  // height: 10vh;
+  background-color: #023e8a;
   color: lightgray;
+
 `;
 
 const Wrapper = styled.div`
   padding: 20px;
   display: flex;
+
   justify-content: space-between;
   @media only screen and (max-width: 480px) {
     padding: 10px;
@@ -19,12 +21,14 @@ const Wrapper = styled.div`
 const List = styled.ul`
   padding: 0;
   margin: 0;
+  color: #82ca9d;
   list-style: none;
   display: flex;
 `;
 
 const ListItem = styled.li`
   margin-right: 20px;
+
   @media only screen and (max-width: 480px) {
     margin-right: 10px;
     font-size: 14px;
@@ -32,6 +36,7 @@ const ListItem = styled.li`
 
 `;
 const Copyright = styled.span`
+  color: #82ca9d;
   @media only screen and (max-width: 480px) {
     font-size: 14px;
   }
@@ -42,12 +47,14 @@ const Footer = () => {
     <Container>
       <Wrapper>
         <List>
-          <ListItem>Guide</ListItem>
-          <ListItem>Support</ListItem>
-          <ListItem>API</ListItem>
-          <ListItem>Community</ListItem>
+          <ListItem>Created by Samy Frey</ListItem>
+          <ListItem><a href="https://www.linkedin.com/in/samyfrey/" target='_blank'
+								rel='noopener noreferrer'>Linkedin</a></ListItem>
+          <ListItem><a href="https://github.com/samyfrey/" target='_blank'
+								rel='noopener noreferrer'>Github</a></ListItem>
         </List>
-        <Copyright>Lama Dev Ⓒ</Copyright>
+        <Copyright><a href="https://samyfrey.github.io/portfolio/" target='_blank'
+								rel='noopener noreferrer'>samyfrey.com</a></Copyright>
       </Wrapper>
     </Container>
   );

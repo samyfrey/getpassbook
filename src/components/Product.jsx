@@ -10,9 +10,10 @@ import { ButtonMain } from './styles/ButtonMain'
 
 const Container = styled.div`
   display: flex;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 700px) {
     flex-direction: column;
     padding: 30px 20px;
+    font-size: 1vw;
   }
 `;
 
@@ -88,7 +89,7 @@ const Product = () => {
           <br />
           <b>always</b> 
         </Title>
-        <SubTitle>We know that your </SubTitle>
+        <SubTitle>We know that repetitive work is from the past! </SubTitle>
         <Desc>
           Passbook is the leading platform for managing your client portfolio. We help our clients succeed by getting instant access to dashboards and data that communicate clearly, achieve
           marketing goals, and are easy to understand.
@@ -96,6 +97,7 @@ const Product = () => {
         <Desc>
           Organizations around the world are using Passbook
         </Desc>
+        <br/>
         <ButtonMain ><a href="https://github.com/samyfrey/passbook" target='_blank'
 								rel='noopener noreferrer'>Learn More</a></ButtonMain>
       </Right>

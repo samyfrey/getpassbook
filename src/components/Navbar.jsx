@@ -4,10 +4,13 @@ import styled from "styled-components";
 
 const Container = styled.div`
   height: 50px;
+
+
 `;
 const Wrapper = styled.div`
   padding: 10px 20px;
   display: flex;
+
   align-items: center;
   justify-content: space-between;
 `;
@@ -53,6 +56,7 @@ const Button = styled.button`
   font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
+
 `;
 
 const Navbar = () => {
@@ -62,10 +66,10 @@ const Navbar = () => {
         <Left>
           <Logo>getPassbook</Logo>
 
-          <Menu>
+          <Menu id='top-scroll'>
             <MenuItem><Link to="home" spy={true} smooth={true}>Home</Link></MenuItem>
             <MenuItem><Link to="product" spy={true} smooth={true}>Product</Link></MenuItem>
-            <MenuItem><Link to="feature" spy={true} smooth={true}>Features</Link></MenuItem>
+            <MenuItem><Link to="features" spy={true} smooth={true}>Features</Link></MenuItem>
             <MenuItem><Link to="price" spy={true} smooth={true}>Pricing</Link></MenuItem>
             <MenuItem><Link to="contact" spy={true} smooth={true}>Contact</Link></MenuItem>
 
