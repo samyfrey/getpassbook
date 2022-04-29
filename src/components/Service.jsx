@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 // import How from "../img/how.png";
 import MiniCard from "./MiniCard";
-import Play from "../img/play.png";
+// import Play from "../img/play.png";
 
 const Container = styled.div`
   display: flex;
@@ -137,7 +137,7 @@ const Service = () => {
             <MiniCard />
           </CardContainer>
           <Button onClick={() => setOpen(true)}>
-            <Icon src={Play} />
+            {/* <Icon src={Play} /> */}
             How it works
           </Button>
         </Wrapper>

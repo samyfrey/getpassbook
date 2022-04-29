@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 // import App from "../img/app.png";
 import AnimatedShapes from "./AnimatedShapes";
-
+import frameclient from '../img/frame_client.png'
+import frameclients from '../img/frame_clients.png'
 const Container = styled.div`
   display: flex;
   @media only screen and (max-width: 480px) {
@@ -19,7 +20,11 @@ const Left = styled.div`
 `;
 
 const Image = styled.img`
-  width: 80%;
+  width: 50vw;
+  max-width: 80%;
+  margin-left: 30px;
+  margin-top: 30px;
+  
 `;
 
 const Right = styled.div`
@@ -68,7 +73,9 @@ const Feature = () => {
   return (
     <Container id="feature">
       <Left>
-        {/* <Image src={App} /> */}
+        <Image src={frameclient} />
+        <Image src={frameclients} />
+          {/* <img src={frameclient} alt='frame1'></img> */}
       </Left>
       <Right>
         <Title>

@@ -48,7 +48,7 @@ const MenuItem = styled.li`
 const Button = styled.button`
   border: 2px solid white;
   padding: 10px 15px;
-  background-color: crimson;
+  background-color: #82ca9d;
   color: white;
   font-weight: bold;
   border-radius: 10px;
@@ -75,7 +75,7 @@ const Navbar = () => {
 
           </Menu>
         </Left>
-        <Button>JOIN TODAY</Button>
+        <Button>Request a Demo</Button>
       </Wrapper>
     </Container>
   );

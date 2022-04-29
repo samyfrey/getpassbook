@@ -12,12 +12,13 @@ const Container = styled.div`
   }
 `;
 
+
 const Price = () => {
   return (
     <Container id="price">
-      <PriceCard price="10" type="Basic" />
-      <PriceCard price="20" type="Premium" />
-      <PriceCard price="30" type="Advanced" />
+      <PriceCard price="10" type="Basic" access="One Viewer" extra="Basic Plugins"/>
+      <PriceCard price="20" type="Premium" access="Team Viewer/Edit" extra="Premium Plugins"/>
+      <PriceCard price="30" type="Advanced" access="Enterprise Viewer/Edit" extra="Premium Plugins"/>
     </Container>
   );
 };
