@@ -11,6 +11,7 @@ import Features from "./components/Features";
 
 const Container = styled.div`
   height: 100vh;
+  min-height: 550px;
   overflow: hidden;
   position: relative;
   max-width: 1500px;

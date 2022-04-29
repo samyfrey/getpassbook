@@ -9,6 +9,7 @@ import newsFeature from '../img/news-feature.gif'
 import budgetFeature from '../img/budget-feature.gif'
 const Container = styled.div`
   display: flex;
+  // width: 100%;
   height: 100%;
   @media only screen and (max-width: 480px) {
     flex-direction: column;
@@ -43,7 +44,7 @@ const Video = styled.video`
 `;
 
 const Right = styled.div`
-  width: 50%;
+  width: 100%;
   @media only screen and (max-width: 480px) {
     width: 100%;
   }
@@ -70,6 +71,11 @@ const CardContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  width: 100%;
+    @media only screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 `;
 
 
@@ -104,13 +110,13 @@ const Features = () => {
     <Container id="features">
       <Left>
         {/* <Image open={open} src={How} /> */}
-        <Video
+        {/* <Video
           open={open}
           autoPlay
           loop
           controls
-          src="https://player.vimeo.com/external/449759244.sd.mp4?s=d5f3da46ddc17aa69a7de84f1e420610ebd2a391&profile_id=139&oauth2_token_id=57447761"
-        />
+          src="https://recordit.co/v3ndC4HCHg"
+        /> */}
       </Left>
       <Right>
         <Wrapper>
@@ -123,11 +129,11 @@ const Features = () => {
             <MiniCard source={budgetFeature} text="Track Budgets"/>
             <MiniCard source={newsFeature} text="Get Latest News"/>
 
-          </CardContainer>
           <ButtonMain onClick={() => setOpen(true)}>
             {/* <Icon src={Play} /> */}
             How it works
           </ButtonMain>
+          </CardContainer>
         </Wrapper>
       </Right>
       {smallScreen && open && (
