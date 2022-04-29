@@ -5,6 +5,8 @@ import MiniCard from "./MiniCard";
 // import Play from "../img/play.png";
 import { ButtonMain } from './styles/ButtonMain'
 import searchFeature from '../img/search-feature.gif'
+import newsFeature from '../img/news-feature.gif'
+import budgetFeature from '../img/budget-feature.gif'
 const Container = styled.div`
   display: flex;
   height: 100%;
@@ -112,17 +114,15 @@ const Features = () => {
       </Left>
       <Right>
         <Wrapper>
-          <Title>Simple process to start</Title>
+          <Title>Everything you need to speed up your processes</Title>
           <Desc>
-            We provide digital experience services to startups and small
-            businesses to looking for a partner of their digital media, design &
-            development, lead generation and communications requirents. We work
-            with you, not for you. Although we have a great resources
+            Passbook has all the features you need to help you get your data quickly and track your targets easily. Plus, you have access to all the information you need thanks to our integrated NewsAPI. 
           </Desc>
           <CardContainer>
-            <MiniCard source={searchFeature} text="Search Clients"/>
-            <MiniCard />
-            <MiniCard />
+            <MiniCard source={searchFeature} text="Manage your Portfolio"/>
+            <MiniCard source={budgetFeature} text="Track Budgets"/>
+            <MiniCard source={newsFeature} text="Get Latest News"/>
+
           </CardContainer>
           <ButtonMain onClick={() => setOpen(true)}>
             {/* <Icon src={Play} /> */}

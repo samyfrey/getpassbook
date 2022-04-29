@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Search from "../img/search.png";
 
 const Container = styled.div`
-  width: 300px;
+  width: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;

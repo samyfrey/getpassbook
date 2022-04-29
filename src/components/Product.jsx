@@ -4,6 +4,8 @@ import styled from "styled-components";
 import AnimatedShapes from "./AnimatedShapes";
 import frameclient from '../img/frame_client.png'
 import framedashboard from '../img/frame_dashboard.png'
+import multiple from '../img/multiple.png'
+
 import { ButtonMain } from './styles/ButtonMain'
 
 const Container = styled.div`
@@ -77,7 +79,7 @@ const Product = () => {
       <Left>
         {/* <Image src={frameclient} /> */}
         {/* <Image src={frameclients} /> */}
-        <Image src={framedashboard} />
+        <Image src={multiple} />
           {/* <img src={frameclient} alt='frame1'></img> */}
       </Left>
       <Right>

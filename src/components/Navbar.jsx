@@ -71,7 +71,7 @@ const Navbar = () => {
 
           </Menu>
         </Left>
-        <Button><Link to="contact" spy={true} smooth={true}>Request a Demo</Link></Button>
+        <Button><Link to="contact" spy={true} smooth={true}>REQUEST A DEMO</Link></Button>
       </Wrapper>
     </Container>
   );
