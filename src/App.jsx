@@ -1,3 +1,5 @@
+import './style.css';
+
 import styled, { css } from "styled-components";
 import Contact from "./components/Contact";
 import Feature from "./components/Feature";
@@ -45,7 +47,7 @@ const ServiceShape = styled.div`
 const PriceShape = styled.div`
   ${Shape}
   clip-path: polygon(33% 0, 100% 0%, 100% 100%, 67% 100%);
-  background-color: crimson;
+  background-color: #EEF5FF;
 `;
 
 const App = () => {

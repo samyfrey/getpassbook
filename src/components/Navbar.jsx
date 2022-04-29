@@ -61,12 +61,7 @@ const Navbar = () => {
       <Wrapper>
         <Left>
           <Logo>getPassbook</Logo>
-          <ul style={{ listStyleType: "none" }}>
-<li>
-          
 
-</li>
-          </ul>
           <Menu>
             <MenuItem><Link to="home" spy={true} smooth={true}>Home</Link></MenuItem>
             <MenuItem><Link to="feature" spy={true} smooth={true}>Features</Link></MenuItem>
@@ -75,7 +70,7 @@ const Navbar = () => {
 
           </Menu>
         </Left>
-        <Button>Request a Demo</Button>
+        <Button><Link to="contact" spy={true} smooth={true}>Request a Demo</Link></Button>
       </Wrapper>
     </Container>
   );

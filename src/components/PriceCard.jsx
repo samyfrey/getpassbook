@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-scroll";
 import styled from "styled-components";
+import { ButtonMain } from './styles/ButtonMain'
 
 const Container = styled.div`
   margin-right: 50px;
@@ -56,25 +58,7 @@ const ListItem = styled.li`
   }
 `;
 
-const Button = styled.button`
-  border: none;
-  background-color: #4282FA;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 110px;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 15px;
-  border-radius: 10px;
-  cursor: pointer;
-  @media only screen and (max-width: 480px) {
-    font-size: 12px;
-    padding: 5px;
-  }
-`;
+
 
 const PriceCard = ({ price, type, access, extra }) => {
   return (
@@ -89,9 +73,11 @@ const PriceCard = ({ price, type, access, extra }) => {
         <ListItem>24/7 Exclusive Support</ListItem>
         <ListItem>{extra}</ListItem>{" "}
       </List>
-      <Button>Join Now</Button>
+      <ButtonMain><Link to="contact" spy={true} smooth={true}>Join Now</Link></ButtonMain>
     </Container>
   );
 };
+
+
 
 export default PriceCard;

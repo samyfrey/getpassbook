@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  height: 10%;
-  background-color: #111;
+  height: 30%;
+  background-color: #1111;
   color: lightgray;
 `;
 

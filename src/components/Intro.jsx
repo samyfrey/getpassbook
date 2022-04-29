@@ -3,6 +3,8 @@ import styled from "styled-components";
 // import Woman from '../img/woman.png'
 // import AnimatedShapes from "./AnimatedShapes";
 import LineChart from "./LineChart";
+import { ButtonMain } from './styles/ButtonMain'
+
 
 const Container = styled.div`
   height: calc(100vh - 50px);
@@ -64,19 +66,7 @@ const Info = styled.div`
   }
 `;
 
-const Button = styled.button`
-  padding: 15px;
-  background-color: #4282FA;
-  color: white;
-  border-radius: 10px;
-  font-weight: bold;
-  border: none;
-  letter-spacing: 2px;
-  cursor: pointer;
-  @media only screen and (max-width: 480px) {
-    margin-bottom: 20px;
-  }
-`;
+
 
 const Contact = styled.div`
   display: flex;
@@ -118,7 +108,7 @@ const Intro = () => {
           Manage your client portfolio by getting a consolidated view of your revenue targets, outstanding loans and tracking your budget performance. All of this while staying up-to-date with news relevant to you. 
         </Desc>
         <Info>
-          <Button>START A PROJECT</Button>
+          <ButtonMain >Start a Project</ButtonMain>
           {/* <Contact>
             <Phone>info@passbook.com</Phone>
             <ContactText>For any question or concern</ContactText>

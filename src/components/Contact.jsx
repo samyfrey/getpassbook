@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 import { useRef, useState } from "react";
 import './reachOut.scss'
 import { TextInput } from './TextInput';
+import { ButtonMain } from './styles/ButtonMain'
 
 const Button = styled.button`
   padding: 15px;
@@ -21,10 +22,11 @@ const Button = styled.button`
 `;
 
 const Container = styled.div`
-  height: 100%;
+  // height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #F9F9F9;
   @media only screen and (max-width: 480px) {
     flex-direction: column;
   }
@@ -87,7 +89,7 @@ const [email, setEmail] = useState('')
           <TextInput label="Subject"name="subject" value={subject} setValue={setSubject} />
           <TextInput label="Email"name="user_email" value={email} setValue={setEmail}/>
           <textarea rows="5" placeholder="type your message here" name="message" />
-          {done ? 'sent. thank you!' : <Button data-progress-text='uploading'>Submit</Button>}
+          {done ? 'sent. thank you!' : <ButtonMain data-progress-text='uploading'>Submit</ButtonMain>}
         </form>
         {/* <a href='#'>
           <FaLinkedinIn />

@@ -3,7 +3,9 @@ import styled from "styled-components";
 // import App from "../img/app.png";
 import AnimatedShapes from "./AnimatedShapes";
 import frameclient from '../img/frame_client.png'
-import frameclients from '../img/frame_clients.png'
+import framedashboard from '../img/frame_dashboard.png'
+import { ButtonMain } from './styles/ButtonMain'
+
 const Container = styled.div`
   display: flex;
   @media only screen and (max-width: 480px) {
@@ -57,42 +59,43 @@ const Desc = styled.p`
   margin-top: 30px;
 `;
 
-const Button = styled.button`
-  width: 150px;
-  border: none;
-  padding: 15px 20px;
-  background-color: darkblue;
-  color: white;
-  font-size: 20px;
-  border-radius: 20px;
-  margin-top: 20px;
-  cursor: pointer;
-`;
+// const Button = styled.button`
+//   width: 150px;
+//   border: none;
+//   padding: 15px 20px;
+//   background-color: #4282FA;
+//   color: white;
+//   font-size: 20px;
+//   border-radius: 20px;
+//   margin-top: 20px;
+//   cursor: pointer;
+// `;
 
 const Feature = () => {
   return (
     <Container id="feature">
       <Left>
-        <Image src={frameclient} />
-        <Image src={frameclients} />
+        {/* <Image src={frameclient} /> */}
+        {/* <Image src={frameclients} /> */}
+        <Image src={framedashboard} />
           {/* <img src={frameclient} alt='frame1'></img> */}
       </Left>
       <Right>
         <Title>
           <b>automated</b> dashboards
           <br />
-          <b>good</b> business
+          <b>always</b> 
         </Title>
-        <SubTitle>We know that good design means good business.</SubTitle>
+        <SubTitle>We know that your </SubTitle>
         <Desc>
-          We help our clients succeed by creating brand identities, digital
-          experiences, and print materials that communicate clearly, achieve
-          marketing goals, and look fantastic.
+          Passbook is the leading platform for managing your client portfolio. We help our clients succeed by getting instant access to dashboards and data that communicate clearly, achieve
+          marketing goals, and are easy to understand.
         </Desc>
         <Desc>
-          We care your business and guarantee you to achieve marketing goals.
+          Organizations around the world are using Passbook
         </Desc>
-        <Button>Learn More</Button>
+        <ButtonMain ><a href="https://github.com/samyfrey/passbook" target='_blank'
+								rel='noopener noreferrer'>Learn More</a></ButtonMain>
       </Right>
       {/* <AnimatedShapes/> */}
     </Container>

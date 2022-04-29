@@ -3,6 +3,7 @@ import styled from "styled-components";
 // import How from "../img/how.png";
 import MiniCard from "./MiniCard";
 // import Play from "../img/play.png";
+import { ButtonMain } from './styles/ButtonMain'
 
 const Container = styled.div`
   display: flex;
@@ -69,19 +70,6 @@ const CardContainer = styled.div`
   margin-top: 50px;
 `;
 
-const Button = styled.button`
-  width: 180px;
-  border: none;
-  border-radius: 10px;
-  background-color: darkblue;
-  color: white;
-  font-size: 20px;
-  padding: 15px;
-  margin-top: 50px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-`;
 
 const Icon = styled.img`
   width: 20px;
@@ -136,10 +124,10 @@ const Service = () => {
             <MiniCard />
             <MiniCard />
           </CardContainer>
-          <Button onClick={() => setOpen(true)}>
+          <ButtonMain onClick={() => setOpen(true)}>
             {/* <Icon src={Play} /> */}
             How it works
-          </Button>
+          </ButtonMain>
         </Wrapper>
       </Right>
       {smallScreen && open && (
