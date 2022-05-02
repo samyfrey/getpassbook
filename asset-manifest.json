@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/getpassbook/static/css/main.a8fe7530.chunk.css",
+    "main.js": "/getpassbook/static/js/main.05ede3a4.chunk.js",
+    "main.js.map": "/getpassbook/static/js/main.05ede3a4.chunk.js.map",
+    "runtime-main.js": "/getpassbook/static/js/runtime-main.f1354fdb.js",
+    "runtime-main.js.map": "/getpassbook/static/js/runtime-main.f1354fdb.js.map",
+    "static/js/2.c1616b03.chunk.js": "/getpassbook/static/js/2.c1616b03.chunk.js",
+    "static/js/2.c1616b03.chunk.js.map": "/getpassbook/static/js/2.c1616b03.chunk.js.map",
+    "index.html": "/getpassbook/index.html",
+    "static/css/main.a8fe7530.chunk.css.map": "/getpassbook/static/css/main.a8fe7530.chunk.css.map",
+    "static/js/2.c1616b03.chunk.js.LICENSE.txt": "/getpassbook/static/js/2.c1616b03.chunk.js.LICENSE.txt",
+    "static/media/budget-feature.f1b93c41.gif": "/getpassbook/static/media/budget-feature.f1b93c41.gif",
+    "static/media/multiple.1883d82f.png": "/getpassbook/static/media/multiple.1883d82f.png",
+    "static/media/news-feature.cf0e47f3.gif": "/getpassbook/static/media/news-feature.cf0e47f3.gif",
+    "static/media/search-feature.eb060436.gif": "/getpassbook/static/media/search-feature.eb060436.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f1354fdb.js",
+    "static/js/2.c1616b03.chunk.js",
+    "static/css/main.a8fe7530.chunk.css",
+    "static/js/main.05ede3a4.chunk.js"
+  ]
+}
