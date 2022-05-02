@@ -2,9 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  // height: 10vh;
   background-color: #023e8a;
   color: lightgray;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 
 `;
 
@@ -13,7 +16,7 @@ const Wrapper = styled.div`
   display: flex;
 
   justify-content: space-between;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 700px) {
     padding: 10px;
   }
 `;
@@ -29,7 +32,7 @@ const List = styled.ul`
 const ListItem = styled.li`
   margin-right: 20px;
 
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 700px) {
     margin-right: 10px;
     font-size: 14px;
   }
@@ -37,7 +40,7 @@ const ListItem = styled.li`
 `;
 const Copyright = styled.span`
   color: #82ca9d;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 700px) {
     font-size: 14px;
   }
 `;

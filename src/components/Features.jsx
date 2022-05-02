@@ -1,18 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-// import How from "../img/how.png";
 import MiniCard from "./MiniCard";
-// import Play from "../img/play.png";
 import { ButtonMain } from './styles/ButtonMain'
 import searchFeature from '../img/search-feature.gif'
 import newsFeature from '../img/news-feature.gif'
 import budgetFeature from '../img/budget-feature.gif'
-import appOverview from '../img/app-overview.gif'
+
 const Container = styled.div`
   display: flex;
   // width: 100%;
-  height: 100%;
-  @media only screen and (max-width: 480px) {
+  height: 100vh;
+  @media only screen and (max-width: 700px) {
     flex-direction: column;
   }
 `;
@@ -20,7 +18,7 @@ const Container = styled.div`
 const Left = styled.div`
   width: 50%;
   position: relative;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 700px) {
     display: none;
   }
 `;
@@ -29,7 +27,7 @@ const Left = styled.div`
 
 const Right = styled.div`
   width: 100%;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 700px) {
     width: 100%;
   }
 `;
@@ -38,7 +36,7 @@ const Wrapper = styled.div`
   padding: 50px;
   display: flex;
   flex-direction: column;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 700px) {
     padding: 20px;
     flex-direction: column;
     align-items: center;
@@ -58,7 +56,7 @@ const CardContainer = styled.div`
   justify-content: space-between;
   margin-top: 50px;
   width: 100%;
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 700px) {
     flex-direction: column;
     align-items: flex-end;
   }

@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-// import Woman from '../img/woman.png'
-// import AnimatedShapes from "./AnimatedShapes";
 import LineChart from "./LineChart";
 import { ButtonMain } from './styles/ButtonMain'
 
@@ -10,38 +8,22 @@ const Container = styled.div`
   height: calc(100vh - 50px);
   display: flex;
   padding: 20px;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 700px) {
     flex-direction: column;
-  }
-`;
-const ChartContainer = styled.div`
-  height: 300px;
-  display: flex;
-  padding: 20px;
-  justify-content: center;
-  @media only screen and (max-width: 480px) {
-    flex-direction: column;
-  }
-`;
 
-const Left = styled.div`
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  @media only screen and (max-width: 480px) {
-    width: 100%;
-    height: 100%;
   }
 `;
 
 const Title = styled.h1`
   width: 65%;
   font-size: 60px;
-  @media only screen and (max-width: 480px) {
-    width: 100%;
-    font-size: 50px;
+  @media only screen and (max-width: 700px) {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+
   }
 `;
 
@@ -49,8 +31,8 @@ const Desc = styled.p`
   width: 60%;
   font-size: 20px;
   margin-top: 20px;
-  @media only screen and (max-width: 480px) {
-    width: 100%;
+  @media only screen and (max-width: 700px) {
+
   }
 `;
 
@@ -60,9 +42,9 @@ const Info = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media only screen and (max-width: 480px) {
-    width: 100%;
+  @media only screen and (max-width: 700px) {
     flex-direction: column;
+
   }
 `;
 
@@ -71,6 +53,16 @@ const Info = styled.div`
 const Contact = styled.div`
   display: flex;
   flex-direction: column;
+
+    @media only screen and (max-width: 700px) {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 `;
 
 const Phone = styled.span`
@@ -83,26 +75,42 @@ const ContactText = styled.span`
   margin-top: 5px;
 `;
 
+const Left = styled.div`
+  width: 60%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (max-width: 700px) {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+`;
 const Right = styled.div`
   width: 40%;
   color: #0a6ec7;
+  height: 100%;
   display: flex;
   justify-content: center;
-  @media only screen and (max-width: 480px) {
+  align-items: center;
+  @media only screen and (max-width:700px) {
     display: none;
+
   }
 `;
 
-const Image = styled.img`
-    width: 100%;
-    display: flex;
-    justify-content: center;
-`
 
 const Intro = () => {
   return (
     <Container>
       <Left>
+
         <Title>all your portfolio, <br />in one place</Title>
         <Desc>
           Manage your client portfolio by getting a consolidated view of your revenue targets, outstanding loans and tracking your budget performance. All of this while staying up-to-date with news relevant to you. 
@@ -118,7 +126,11 @@ const Intro = () => {
         </Info>
 
       </Left>
-      <Right><LineChart/></Right>
+      <Right>
+
+          <LineChart/>
+
+        </Right>
     </Container>
   );
 };

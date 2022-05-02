@@ -1,11 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-// import App from "../img/app.png";
-import AnimatedShapes from "./AnimatedShapes";
-import frameclient from '../img/frame_client.png'
-import framedashboard from '../img/frame_dashboard.png'
 import multiple from '../img/multiple.png'
-
 import { ButtonMain } from './styles/ButtonMain'
 
 const Container = styled.div`
@@ -19,7 +14,7 @@ const Container = styled.div`
 
 const Left = styled.div`
   width: 50%;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 700px) {
     display: none;
   }
 `;
@@ -37,14 +32,14 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 700px) {
     width: 100%;
   }
 `;
 
 const Title = styled.span`
   font-size: 50px;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 700px) {
     font-size: 50px;
   }
 `;
@@ -62,26 +57,15 @@ const Desc = styled.p`
   margin-top: 30px;
 `;
 
-// const Button = styled.button`
-//   width: 150px;
-//   border: none;
-//   padding: 15px 20px;
-//   background-color: #4282FA;
-//   color: white;
-//   font-size: 20px;
-//   border-radius: 20px;
-//   margin-top: 20px;
-//   cursor: pointer;
-// `;
+
 
 const Product = () => {
   return (
     <Container id="product">
       <Left>
-        {/* <Image src={frameclient} /> */}
-        {/* <Image src={frameclients} /> */}
+
         <Image src={multiple} />
-          {/* <img src={frameclient} alt='frame1'></img> */}
+
       </Left>
       <Right>
         <Title>
@@ -101,7 +85,6 @@ const Product = () => {
         <ButtonMain ><a href="https://github.com/samyfrey/passbook" target='_blank'
 								rel='noopener noreferrer'>Learn More</a></ButtonMain>
       </Right>
-      {/* <AnimatedShapes/> */}
     </Container>
   );
 };

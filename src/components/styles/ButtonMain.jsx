@@ -12,7 +12,7 @@ export const ButtonMain = styled.button`
   text-transform: uppercase;
   max-width: 170px;
   `;
-  //   @media only screen and (max-width: 480px) {
+  //   @media only screen and (max-width: 700px) {
   //     margin-bottom: 20px;
   //   }
   

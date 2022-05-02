@@ -4,7 +4,12 @@ import styled from "styled-components";
 
 const Container = styled.div`
   height: 50px;
-
+  @media only screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    align-items: center;
+  }
 
 `;
 const Wrapper = styled.div`
@@ -13,6 +18,13 @@ const Wrapper = styled.div`
 
   align-items: center;
   justify-content: space-between;
+    @media only screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    }
 `;
 
 const Left = styled.div`
@@ -25,15 +37,23 @@ const Left = styled.div`
 const Logo = styled.h1`
   font-weight: bold;
   text-decoration: underline #0a6ec7;
+    @media only screen and (max-width: 900px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+  }
 `;
 
 const Menu = styled.ul`
   display: flex;
   list-style: none;
 
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 900px) {
     display: none;
+
   }
+
 `;
 
 const MenuItem = styled.li`
@@ -46,6 +66,8 @@ const MenuItem = styled.li`
     color: #4282FA;
     cursor: pointer; 
   }
+  
+  
 `;
 
 const Button = styled.button`
@@ -56,6 +78,10 @@ const Button = styled.button`
   font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
+
+      @media only screen and (max-width: 700px) {
+        margin-top: 20px;
+      }
 
 `;
 

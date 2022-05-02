@@ -3,19 +3,21 @@ import { Link } from "react-scroll";
 import styled from "styled-components";
 
 const Container = styled.div`
-width: 100%;
+  width: 100vw;
+  display: flex; 
+  justify-content: flex-end;
 `;
 
 const Button = styled.button`
   border: 2px solid white;
   padding: 10px 15px;
-  display: flex; 
-  justify-content: flex-end;
+
   background-color: #82ca9d;
   color: white;
   font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
+  margin-right: 20px
 `;
 
 const ScrollButton = () => {

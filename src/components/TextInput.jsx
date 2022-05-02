@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './textInput.css';
+import React from 'react';
+import './styles/textInput.css';
 
 export function TextInput({ value, setValue, type = 'text', label, name }) {
   ;
