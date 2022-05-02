@@ -5,8 +5,14 @@ Deployed application: https://samyfrey.github.io/passbook/
 Getpassbook is the mock-up commercial website for the [passbook](https://github.com/samyfrey/passbook) application. 
 It is a responsive single page website integrating multiple react libraries. 
 
+***Website***
 <p align="center">
 <img src="http://g.recordit.co/P56Vf9kozS.gif" alt="site-overview" width="700" >
+</p>
+
+***Small Devices***
+<p align="center">
+<img src="http://g.recordit.co/JaEooHp03J.gif" alt="site-overview" width="400" >
 </p>
 
 ## User Stories
