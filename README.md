@@ -1,4 +1,4 @@
-Deployed application: https://samyfrey.github.io/passbook/
+Deployed application: https://samyfrey.github.io/getpassbook/
 
 # Getpassbook
 
